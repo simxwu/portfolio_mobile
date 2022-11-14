@@ -1,0 +1,209 @@
+
+
+body{
+    background-color: #EAC5C5;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin: auto;
+    width: 95%;
+}
+
+ul.menu a{
+    color: indianred;
+    text-decoration: none;
+    font-size: calc(5px + 2vw);
+        }
+
+ul.menu li{
+    display: inline;
+    list-style-type: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+.nav{width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-image: url("../images/background.JPG");
+}
+
+
+a.nav:hover{color:aliceblue;}
+
+
+
+/* index page */
+img.bottom{
+    width: 80%;
+}
+
+img.top{
+    width: 80%;
+}
+
+#fadeboston{
+    /* position: relative; */
+    width: 600px;
+    margin: 0 auto;
+}
+
+#fadeboston img{
+    position: absolute;
+    left: 20px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#fadeboston img.top:hover{
+    opacity: 0;
+}
+
+/* footer{
+    position: relative;
+} */
+
+/* @keyframes FadeInOut{
+    0% {opacity:1;}
+    25% {opacity: .75;}
+    50% {opacity: .5;}
+    100% {opacity: 0;}
+} */
+
+
+/* resturants page */
+p.storename{
+    font-family: 'Space Mono', monospace;
+}
+
+img.locationicon{
+    width: 30px;
+}
+
+
+
+
+
+/* images */
+
+img#bostonpic{
+    width: 45%;
+    margin: 2vw;
+    padding: 2px;
+    border-width: 2px;
+    border-color:aliceblue;
+}
+
+img.store{
+    width: 300px;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    border-radius: .5vw;
+    padding: 2px;
+}
+
+ul.stores li{display: inline;}
+
+/* gallery */
+
+img.foodpic{
+    width:300px;
+    margin-top: 2vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    border-radius: 1vw;
+    padding: 2px;
+}
+
+/* .gallerypic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+.gallerypic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+img#lobster{
+    width: 30%;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    border-radius: .5vw;
+    padding: 2px;}
+
+
+img.store:hover{
+    opacity: .5;
+}
+
+img.foodpic:hover{
+    opacity: .7;
+}
+
+p.gallerycaption{
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+}
+
+
+/* mobile view */
+@media screen and (max-width: 800px){
+    body{
+        display: grid;
+        grid-template-rows: 70px auto auto 50px;
+    }
+
+    header{
+        grid-row: 1 / auto;
+    }
+    main{
+        grid-row: 2 / span 1;
+    }
+    footer{
+        grid-row: 4 / span 1;
+    }
+
+    aside{
+        grid-row: 3 / span 1;
+    }
+
+    #fadeboston{
+        /* position: relative; */
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    img#lobster{
+        width: 80%;
+    }
+
+
+    .gallerypic {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    }
+
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+      }
+
+    #fadeboston img{
+        position: absolute;
+        left: 20px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+
+}
